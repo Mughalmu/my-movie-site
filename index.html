@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieHub | Watch Now</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0f172a; color: white; }
+        .movie-card:hover { transform: scale(1.05); transition: 0.3s; }
+    </style>
+</head>
+<body>
+    <nav class="flex items-center justify-between px-10 py-5 bg-slate-900 shadow-xl">
+        <h1 class="text-3xl font-bold text-red-600 tracking-tighter">MOVIE<span class="text-white">HUB</span></h1>
+        <ul class="flex space-x-8 font-medium">
+            <li class="hover:text-red-500 cursor-pointer">Home</li>
+            <li class="hover:text-red-500 cursor-pointer">Movies</li>
+        </ul>
+    </nav>
+
+    <header class="h-64 flex flex-col items-center justify-center bg-gradient-to-r from-red-800 to-slate-900">
+        <h2 class="text-4xl font-extrabold mb-2">Latest Movie Reviews</h2>
+        <p class="text-gray-300">Welcome to your new movie portal!</p>
+    </header>
+
+    <main class="max-w-7xl mx-auto p-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-slate-800 rounded-lg p-4 movie-card">
+                <img src="https://via.placeholder.com/300x450" class="rounded mb-4 w-full">
+                <h3 class="font-bold text-xl">Movie 1</h3>
+                <button class="mt-4 w-full bg-red-600 py-2 rounded">View Details</button>
+            </div>
+            <div class="bg-slate-800 rounded-lg p-4 movie-card">
+                <img src="https://via.placeholder.com/300x450" class="rounded mb-4 w-full">
+                <h3 class="font-bold text-xl">Movie 2</h3>
+                <button class="mt-4 w-full bg-red-600 py-2 rounded">View Details</button>
+            </div>
+            <div class="bg-slate-800 rounded-lg p-4 movie-card">
+                <img src="https://via.placeholder.com/300x450" class="rounded mb-4 w-full">
+                <h3 class="font-bold text-xl">Movie 3</h3>
+                <button class="mt-4 w-full bg-red-600 py-2 rounded">View Details</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
